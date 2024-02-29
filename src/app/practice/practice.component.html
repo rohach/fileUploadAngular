@@ -1,0 +1,13 @@
+<div style="text-align: center">
+  <div>
+    <input type="file" (change)="onFileSubmit($event)" />
+  </div>
+  <div *ngIf="selectedFile">
+    <ng-container *ngIf="isImage(selectedFile); else pdfPreview">
+      <img src="" alt="Upload Image" />
+    </ng-container>
+    <ng-template #pdfPreview>
+      <iframe [src]="fileUrl" width="100%" height="600px"></iframe>
+    </ng-template>
+  </div>
+</div>

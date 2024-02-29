@@ -1,0 +1,14 @@
+/* file-upload.component.css */
+:host {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
